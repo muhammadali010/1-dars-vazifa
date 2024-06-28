@@ -1,3 +1,58 @@
+// 1-misol 
+// var a=1
+// function outer() {
+//     var b=2
+//     function inner() {
+//         var c=3
+//         console.log(a);
+//         console.log(b);
+//         console.log(c);
+//     }
+// inner()
+// } 
+// outer() 
+
+
+// bu yerda var a global scope hamasini ichida ishlatsa boladi.
+// b varda bolgani uchun javob 2 chiqadi chunki u   function scope ichida bolgani uchun 
+// var c bu blok scope buni malumotlarini ozgartirib bolmaydi
+// javobi birin ketin chiqadi 1,2,3
+
+
+//2-masala
+// console.log(a);
+// var a=5
+// console.log(a);
+
+// birinchi logda undifaned chiqadi chunki log a ni topa olmaydi agar letda yozilganda 
+// error berib toxtatib qoyar edi
+// ikkinchi logda a da berilgan qiymat chiqadi
+
+
+//3-masala
+// console.log(a);
+// let a=10
+// console.log(a);
+
+// bunda birinchi logda qiymat yoqligi uchun hatto berib yuboradi 
+// agar bu varda yozilganda undifaned berar edi hozir birinchi logni ochirib tashlasak
+// ikkinchisida a da berilgan qiymat chiqgan bolar esdi
+
+
+//4-masala
+
+// {
+//     console.log(a);
+//     let a=15
+//     console.log(a);
+// }
+
+// bunda ham a ni topa olmagani uchun hato berib yuboradi
+// bular block scope ichida yozilgan 
+// agar varda yozilganda undifaned chiqib 2 chisida 15 chiqar edi
+
+
+// masalalar
 // 1chi masala
 // let arr = ['tico','malibu','gentra','lada','tahoe']
 // function cars(arr) {
@@ -113,9 +168,3 @@
 // let arr = '             salom                  ';
 // let result = arr.trim();
 // console.log(result);
-
-
-
-
-
-// vaqt yetmay qolgani uchun chala bolib qoldi
